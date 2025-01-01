@@ -1,4 +1,4 @@
-package com.rhi.personal.lotto.ui.theme
+package com.rhi.personal.alramy.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

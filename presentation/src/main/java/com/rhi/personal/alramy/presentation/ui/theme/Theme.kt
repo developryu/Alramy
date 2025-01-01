@@ -1,6 +1,5 @@
-package com.rhi.personal.lotto.ui.theme
+package com.rhi.personal.alramy.presentation.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

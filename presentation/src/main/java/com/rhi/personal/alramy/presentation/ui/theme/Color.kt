@@ -1,4 +1,4 @@
-package com.rhi.personal.lotto.ui.theme
+package com.rhi.personal.alramy.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

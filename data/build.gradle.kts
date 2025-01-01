@@ -1,20 +1,17 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace = "com.rhi.personal.lotto"
+    namespace = "com.rhi.personal.data.data"
     compileSdk = rootProject.extra["compileSdk"] as Int
 
     defaultConfig {
-        applicationId = "com.rhi.personal.lotto"
         minSdk = rootProject.extra["minSdk"] as Int
-        targetSdk = rootProject.extra["compileSdk"] as Int
-        versionCode = rootProject.extra["versionCode"] as Int
-        versionName = rootProject.extra["versionName"] as String
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -36,9 +33,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":data"))
     implementation(project(":domain"))
-    implementation(project(":presentation"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -46,6 +41,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-
 }
