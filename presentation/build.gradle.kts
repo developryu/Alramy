@@ -71,4 +71,8 @@ dependencies {
     implementation(libs.orbit.core)
     implementation(libs.orbit.viewmodel)
     implementation(libs.orbit.compose)
+
+    //compose navigation
+    implementation(libs.navigation.compose)
+    implementation(libs.hilt.navigation.compose)
 }
